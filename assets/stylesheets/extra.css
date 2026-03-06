@@ -1,0 +1,6 @@
+/* Hide only the Home link in right TOC */
+body[data-md-page="index"] 
+.md-nav--secondary 
+a[href="."] {
+    display: none !important;
+}
