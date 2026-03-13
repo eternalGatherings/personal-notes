@@ -1,0 +1,102 @@
+site_name: Notes by Sachin Kn
+site_description: Notes on QA Automation, Git and Manual Testing by Sachin Kn
+site_author: Sachin Kn
+
+repo_name: sachin-kn
+repo_url: https://github.com/sachinknsachi/
+
+theme:
+  name: material
+  logo: assets/images/sachi.png
+  favicon: assets/images/favicon.ico
+
+  features:
+    - navigation.tabs
+    # - navigation.sections
+    # - navigation.expand
+    - navigation.top
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.tabs.link
+    - navigation.indexes
+    # - navigation.footer
+
+  palette:
+    - scheme: default
+      primary: pink
+      accent: pink
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+    - scheme: slate
+      primary: pink
+      accent: pink
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - attr_list
+  - md_in_html
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+extra_css:
+  - assets/stylesheets/extra.css
+
+nav:
+  - Home: index.md
+  - About: about.md
+  - Public Notes:
+      - 1. Git Commands: Notes/gitCommands.md
+      - 2. Manual Testing: Notes/manualTesting.md
+      - 3. Jenkins Pipeline Demo : Notes/jenkins.md
+      - 4. Solved Problems: 
+        - Notes/solvedProblems/index.md
+        - i. PatternPrinting: Notes/solvedProblems/PatternPrinting.md
+        - ii. StringProblems: Notes/solvedProblems/StringProblems.md
+        - iii. NumbersProblems: Notes/solvedProblems/NumbersProblems.md
+        - iv. ArrayProblems: Notes/solvedProblems/ArrayProblems.md
+        - v. SortingAlgorithms: Notes/solvedProblems/SortingAlgorithms.md
+      - 5. Playwright: Notes/playwright.md
+      - 6. RestAssured: Notes/restassured.md
+      - 7. SQL (WIP): Notes/sql.md
+      - 8. Java (WIP): Notes/java.md
+  - Personal Notes:
+      - 1. Managerial Round Questions: PersonalNotes/ManagerialRoundQuestions.md
+      - 2. Java Script Notes:
+        - PersonalNotes/JavaScript/index.md
+        - i. Basic JS: PersonalNotes/JavaScript/basics.md
+        - ii. Intermediate JS: PersonalNotes/JavaScript/intermediate.md
+        - iii. Advanced JS: PersonalNotes/JavaScript/advanced.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/sachinknsachi/
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/sachin-kn/
+    - icon: fontawesome/brands/instagram
+      link: https://www.instagram.com/sachinkn.official/
+  
+  generator: false
+
+copyright: |
+  &copy; 2026 <a href="https://sachinkn.in"  target="_blank" rel="noopener">Sachin Kn</a>
